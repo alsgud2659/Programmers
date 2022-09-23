@@ -1,0 +1,14 @@
+class Solution {
+    public long[] solution(int x, int n) {
+        long[] answer = new long[n];
+        long temp = x;
+        int i = 0;
+        while(n > 0) {
+            answer[i] = temp;
+            i++;
+            temp += x;
+            n--;
+        }
+        return answer;
+    }
+}
